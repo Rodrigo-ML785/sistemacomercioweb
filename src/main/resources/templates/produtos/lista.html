@@ -9,12 +9,10 @@
 <div class="container">
     <h1>Produtos Cadastrados</h1>
 
-    <!-- Se a lista estiver vazia -->
     <div th:if="${#lists.isEmpty(produtos)}" class="mensagem-vazia">
         <p>Nenhum produto cadastrado.</p>
     </div>
 
-    <!-- Se houver produtos cadastrados -->
     <table th:unless="${#lists.isEmpty(produtos)}">
         <thead>
         <tr>
